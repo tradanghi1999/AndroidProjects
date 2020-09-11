@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="300dp"
+    android:layout_height="180dp"
+    android:background="@drawable/invoice_paper">
+
+    <ImageView
+        android:id="@+id/img_alert"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/danger"
+
+        ></ImageView>
+
+    <TextView
+        android:id="@+id/txv_alert"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignRight="@+id/img_alert"
+        android:layout_alignBottom="@id/img_alert"
+
+        android:layout_marginRight="-172dp"
+
+        android:layout_marginBottom="-5dp"
+        android:text="You're about to exit?"></TextView>
+
+    <Button
+        android:id="@+id/btn_yes_alert"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_alignRight="@id/img_alert"
+        android:layout_alignBottom="@+id/txv_alert"
+        android:layout_marginRight="-92dp"
+        android:layout_marginBottom="-18dp"
+        android:text="Yes">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btn_no_alert"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_alignRight="@id/img_alert"
+        android:layout_alignBottom="@+id/txv_alert"
+        android:layout_marginRight="-172dp"
+        android:layout_marginBottom="-18dp"
+        android:text="No">
+
+    </Button>
+</RelativeLayout>

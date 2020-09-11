@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp">
+
+        <ImageView
+            android:id="@+id/imgProductImage"
+            android:layout_width="93dp"
+            android:layout_height="84dp"
+            android:layout_gravity="start"
+            android:baselineAlignBottom="false"
+            android:layoutDirection="ltr"
+            android:src="@mipmap/storage_product2"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingRight="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txvProductName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Điện thoại Xiaomi Redmi 4A"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt1"
+                    android:layout_width="147dp"
+                    android:layout_height="wrap_content"
+                    android:text="In house"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txvProductPriceInHouse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="1,049,000đ"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/bgBottomNavigation" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txv2"
+                    android:layout_width="147dp"
+                    android:layout_height="wrap_content"
+                    android:text="On Sell"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txvProductPriceOnSell"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="2,049,000đ"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/bgBottomNavigation" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txvProductDes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:paddingTop="2dp"
+                android:text="Màn hình LCD 5 inches                                                                 ROM 16GB - RAM 2GB - Siêu mạnh - Chơi game vô tư" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imageButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/circle_red" />
+
+                <TextView
+                    android:id="@+id/txvQuantity"
+                    android:layout_width="292dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Quantity: 10/10"
+                    android:textColor="@color/red"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_onSell_state"
+            android:layout_width="241dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_bg_rounded_corners_blue"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:text="Trading"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_product_details"
+            android:layout_width="241dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_bg_rounded_corners_darkblue"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:text="Details"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</LinearLayout>

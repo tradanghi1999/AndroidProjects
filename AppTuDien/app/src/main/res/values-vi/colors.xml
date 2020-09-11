@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0093F8</color>
+    <color name="colorPrimaryDark">#1c314d</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorText">#fff</color>
+    <color name="colorTag">#eee</color>
+    <color name="landingPage">#0093F8</color>
+    <declare-styleable name="ParagraphBgColorTextView">
+        <attr name="paragraphBgColor" format="color" />
+    </declare-styleable>
+</resources>

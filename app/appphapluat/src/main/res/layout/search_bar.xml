@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="Suggestion"
+            type="com.ungdunguel.appphapluat.viewmodel.SuggestionModel" />
+        <variable
+            name="KeyWordToSearch"
+            type="com.ungdunguel.appphapluat.viewmodel.KeywordModel" />
+        <variable
+            name="SrchPresenter"
+            type="com.ungdunguel.appphapluat.presenter.SearchPresenter" />
+        <variable
+            name="Listener"
+            type="com.ungdunguel.appphapluat.listener.SearchListener" />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_box_layout"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:backgroundTint="#fff"
+        >
+
+
+        <!--        <Button-->
+<!--            -->
+<!--            android:layout_width="100dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:id="@+id/home_search_button"-->
+<!--            app:layout_constraintRight_toRightOf="parent"></Button>-->
+        <RelativeLayout
+
+            android:layout_height="40dp"
+
+            android:layout_width="0dp"
+            android:layout_marginLeft="15dp"
+            android:paddingRight="5dp"
+            app:layout_constraintEnd_toStartOf="@+id/home_search_button"
+
+            app:layout_constraintHorizontal_bias="1.0"
+
+            app:layout_constraintStart_toStartOf="parent"
+
+            tools:ignore="MissingConstraints">
+
+
+            <AutoCompleteTextView
+
+                android:id="@+id/auto_complete_edt"
+
+
+                android:layout_centerInParent="true"
+
+
+
+                android:layout_height="wrap_content"
+
+                android:background="@null"
+                android:dropDownWidth="300dp"
+                android:dropDownHeight="200dp"
+                android:dropDownVerticalOffset="240dp"
+                android:hint="@string/placeholder"
+                android:imeOptions="actionSearch"
+                android:maxWidth="700dp"
+                android:singleLine="true"
+                android:text="@={KeyWordToSearch.vi_word}"
+                android:textColor="#000"
+                app:onEditorActionListener="@{Listener.onSearchListener}"
+
+
+                android:layout_width="match_parent">
+
+
+            </AutoCompleteTextView>
+
+
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+
+            app:layout_constraintRight_toRightOf="parent"
+
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/round_box_layout"
+
+
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:id="@+id/home_search_button"
+
+
+
+
+            android:layout_width="180dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+
+            android:onClick="@{()->SrchPresenter.onSearchButtonClicked()}"
+
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:maxWidth="150dp"
+                android:id="@+id/home_search_divs"
+
+                android:gravity="center_vertical"
+                android:textColor="#fff"
+                android:textStyle="bold"
+
+
+
+                android:text="@{KeyWordToSearch.groupSearchZone}">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/home_searc_icon"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/ic_search_black_24dp"
+                android:backgroundTint="#fff"
+                android:duplicateParentState="true">
+
+            </TextView>
+        </LinearLayout>
+
+        <!--    <LinearLayout-->
+        <!--        android:layout_width="40dp"-->
+        <!--        android:layout_height="40dp"-->
+        <!--        android:layout_gravity="center_vertical"-->
+        <!--        android:background="@drawable/round_box_layout"-->
+        <!--        android:backgroundTint="@color/colorPrimary"-->
+        <!--        android:layout_alignParentRight="true"-->
+        <!--        android:layout_centerVertical="true"-->
+        <!--        android:layout_marginRight="5dp"-->
+        <!--        android:gravity="center"-->
+        <!--        android:id="@+id/home_search_button"-->
+        <!--        >-->
+
+        <!--        <TextView-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:maxWidth="150dp"-->
+        <!--            android:id="@+id/home_search_divs">-->
+
+        <!--        </TextView>-->
+
+        <!--        <Button-->
+        <!--            android:layout_width="35dp"-->
+        <!--            android:layout_height="35dp"-->
+        <!--            android:background="@drawable/ic_search_black_24dp"-->
+        <!--            android:backgroundTint="#fff"-->
+        <!--            android:id="@+id/home_searc_icon">-->
+
+        <!--        </Button>-->
+        <!--    </LinearLayout>-->
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+

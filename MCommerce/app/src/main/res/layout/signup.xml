@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/main" >
+
+    <RelativeLayout
+        android:id="@+id/logo_container"
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/logo"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/page_title"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/logo_container"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Sign up"
+            android:textSize="50dp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/item_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/page_title"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp">
+        <RelativeLayout
+            android:id="@+id/username_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edtUsername"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_border_rounded_corners_lightgray"
+                android:ems="50"
+                android:inputType="textEmailAddress"
+                android:hint="Your Email"
+                android:textSize="18dp"
+                android:padding="18dp">
+            </EditText>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/password_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/username_container"
+            android:layout_marginTop="10dp">
+            <EditText
+                android:id="@+id/edtPassword"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_border_rounded_corners_lightgray"
+                android:ems="20"
+                android:inputType="textPassword"
+                android:hint="Your Password"
+                android:textSize="18dp"
+                android:padding="18dp">
+
+            </EditText>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/retype_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/password_container"
+            android:layout_marginTop="10dp">
+            <EditText
+                android:id="@+id/edtRetype"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_border_rounded_corners_lightgray"
+                android:ems="20"
+                android:inputType="textPassword"
+                android:hint="Retype Your Password"
+                android:textSize="18dp"
+                android:padding="18dp">
+
+            </EditText>
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/group_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_container"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+
+        <Button
+            android:id="@+id/btnSignIn"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button_bg_rounded_corners_turquoise"
+            android:fontFamily="sans-serif-medium"
+            android:text="Sign Up"
+            android:textColor="#ffffff"
+            android:textSize="16dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/group_button">
+        <RelativeLayout
+            android:id="@+id/otherSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp">
+            <TextView
+                android:id="@+id/footer_txtSignIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Or sign up with social media"
+                android:gravity="center"
+                android:textColor="@color/black"/>
+
+            <RelativeLayout
+                android:id="@+id/footer_signIn_groupIco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_below="@+id/footer_txtSignIn"
+                android:layout_marginTop="10dp">
+                <ImageButton
+                    android:id="@+id/footer_ico_zalo"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/ic_zalo"/>
+                <ImageButton
+                    android:id="@+id/footer_ico_facebook"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/ic_facebook"
+                    android:layout_toRightOf="@+id/footer_ico_zalo"
+                    android:layout_marginStart="10dp"/>
+                <ImageButton
+                    android:id="@+id/footer_ico_gmail"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/button_circle_ic_gmail_background"
+                    android:src="@drawable/ic_gmail"
+                    android:scaleType="fitCenter"
+                    android:padding="5dp"
+                    android:layout_toRightOf="@+id/footer_ico_facebook"
+                    android:layout_marginStart="10dp"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/signUp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal">
+            <TextView
+                android:id="@+id/footer_txtPreSignUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already has an Account?"
+                android:gravity="center"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/footer_txtSignUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/footer_txtPreSignUp"
+                android:layout_marginLeft="5dp"
+                android:text="Sign in now"
+                android:textColor="@color/darkBlue"
+                android:gravity="center"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

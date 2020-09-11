@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="UpdateView"
+            type="vn.edu.uel.apptudien.viewmodel.UpdateModel" />
+        <variable
+            name="UpdatePrstr"
+            type="vn.edu.uel.apptudien.presenter.UpdatePresenter" />
+    </data>
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_loop_black_24dp"
+            android:padding="10dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/up_ic"
+            >
+
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+
+
+            android:layout_toRightOf="@id/up_ic"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="@string/up_present_ver_mess"
+                    android:textSize="18dp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/up_old_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="@{UpdateView.OffVersion}"
+                    android:textColor="@color/colorPrimaryTrans"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_alignParentRight="true">
+
+                </TextView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="@string/up_server_ver_mess"
+                    android:textSize="18dp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/up_new_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="@{UpdateView.OnVersion}"
+                    android:textColor="@color/colorGreen"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_alignParentRight="true">
+
+                </TextView>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <Button
+                    android:id="@+id/up_update_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:text="@string/update"
+                    android:textColor="#fff"
+                    android:textSize="16dp"
+                    android:visibility="@{UpdateView.isUpdatable}"
+                    android:onClick="@{()->UpdatePrstr.updateDatabase()}"
+                    android:layout_weight="1"></Button>
+
+                <Button
+                    android:id="@+id/up_cancle_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="10dp"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:text="@string/cancle"
+                    android:textColor="#fff"
+                    android:textSize="16dp"
+                    android:layout_weight="1">
+
+                </Button>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/ic_draw_close"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:id="@+id/up_close">
+
+        </Button>
+    </RelativeLayout>
+</layout>
+

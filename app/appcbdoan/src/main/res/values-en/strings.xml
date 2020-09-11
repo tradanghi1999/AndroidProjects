@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">YUELdict</string>
+    <string name="def_title" translatable="false"><a>Lorem ipsum dolor sit amet,</a></string>
+    <string name="up_present_ver_mess">Local version is:</string>
+    <string name="up_server_ver_mess">Latest version is:</string>
+    <string name="update">Update</string>
+    <string name="update_info">Update Info</string>
+    <string name="soft_info">About</string>
+    <string name="cancle">Cancle</string>
+    <string name="copyright">\u00A9 copyright by UEL 2020</string>
+    <string name="uniName">University of Economics and Laws</string>
+    <string name="divName">Ho Chi Minh city National University</string>
+    <string name="placeholder">Keyword to find</string>
+    <string name="searchResult">Search result found</string>
+    <string name="resultCount">(0 found)</string>
+    <string name="app_head">Youth Union Dictionary App</string>
+    <string name="ham_text">Category</string>
+    <string name="traffic">Traffic:</string>
+
+    <string name="intro">Introduction</string>
+    <string name="introPara">The Ho Chi Minh Communist Youth Union and the Vietnamese Student Association have long been names
+familiar to all young people and students in the country. Since its inception to date,
+Organization of the Union - Association has always affirmed its position, is the representative of young and influential people
+affects many domestic and international organizations. In particular, in the current integration period,
+As English becomes the popular language in many countries around the world,
+then it became necessary to unify common terms in English to be possible
+exchange information with international friends about the Union - Association work.
+From that reality, Youth Union - Student Association of University of Economics - Construction Law
+building the Dictionary of the Union - Association. Through this dictionary we hope that this will be
+Effective tools to help you Union, Students in particular School and Union, Student
+City members in general can apply to the work of Union - Association and in life.</string>
+    <string name="published">Publising by:</string>
+    <string name="youthUEL">The Youth Union of University of Economics and Laws</string>
+    <string name="content">Content by:</string>
+    <string name="contentAuthor">Master Ngo Le Manh Hieu - Secretary \nand the Organizing Committee - Building Youth Union</string>
+    <string name="develop">Software Developer:</string>
+    <string name="developer">Tran Dai Nghia</string>
+    <string name="contact">Contact:</string>
+    <string name="contactInfo">The Youth Union of University of Economics and Laws\nEmail: doanthanhnien@uel.edu.vn\nPhone: 083 7244555 (Ext 6391)</string>
+
+</resources>

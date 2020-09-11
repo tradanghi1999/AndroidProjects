@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="@drawable/layout_bg"
+            android:orientation="vertical"
+            android:paddingLeft="25dp"
+            android:paddingTop="10dp"
+            android:paddingRight="25dp"
+            android:paddingBottom="0dp"
+
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:fontFamily="sans-serif-medium"
+                android:text="Invoice"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="25dp"
+                android:textStyle="bold"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="700dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/invoice_paper"
+            android:orientation="vertical"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp">
+
+            <TextView
+                android:id="@+id/invoice_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif-thin"
+                android:text="# 123456789"
+                android:textAlignment="center"
+                android:textColor="@color/colorSmallTitle"
+                android:textSize="24dp"></TextView>
+
+            <TextView
+                android:id="@+id/invoice_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:fontFamily="sans-serif-thin"
+                android:text="15 May 2019"
+                android:textAlignment="center"
+                android:textColor="@color/colorSmallTitle"
+                android:textStyle="bold"
+                android:textSize="15dp"></TextView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Supplier"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/colorSmallTitle"
+                    android:textSize="18dp"></TextView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/supplier_img"
+                        android:layout_width="70dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/asus"
+
+                        >
+
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/supplier_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Offical store"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorSmallTitle"
+                        android:textSize="14dp"
+                        android:textStyle="bold"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/supplier_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-thin"
+                        android:text="(84) 1600 1788"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/colorSmallTitle"
+                        android:textSize="12dp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/supplier_address"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="sans-serif-thin"
+                        android:text="167 Dinh Tien Hoang, ward 1, distric 5"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/colorSmallTitle"
+                        android:textSize="12dp"
+                        android:textStyle="bold"></TextView>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="13dp"
+                    android:background="@color/colorSmallTitle">
+
+                </View>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Buyer"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/colorSmallTitle"
+                    android:textSize="18dp"></TextView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/buyer_img"
+                        android:layout_width="70dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/mr_mobile"
+
+                        >
+
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/buyer_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Shop"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorSmallTitle"
+                        android:textSize="14dp"
+                        android:textStyle="bold"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/buyer_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-thin"
+                        android:text="(84) 352676805"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/colorSmallTitle"
+                        android:textSize="12dp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/buyer_address"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="sans-serif-thin"
+                        android:text="224 Hoang Van Thu, ward 4, Tan Binh distric"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/colorSmallTitle"
+                        android:textSize="12dp"
+                        android:textStyle="bold"></TextView>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="13dp"
+                    android:background="@color/colorSmallTitle">
+
+                </View>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Shipping"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/colorSmallTitle"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@+id/shipping_fee"
+                        android:layout_weight="28"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="right"
+                        android:text="$"
+                        android:textColor="@color/colorSmallTitle"
+                        android:textSize="10dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/shipping_fee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-medium"
+
+
+                        android:gravity="right"
+                        android:text="7.5"
+
+                        android:textColor="@color/colorSmallTitle"
+                        android:textSize="10dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/shipping_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight="1"
+
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="right"
+
+                        android:text=">"
+
+                        android:textColor="@color/colorSmallTitle"
+                        android:textSize="12dp"></TextView>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/ship_img"
+                        android:layout_width="70dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/logo_ghtk"
+
+                        >
+
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/shipping_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Giao Hang Tiet Kiem"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorSmallTitle"
+                        android:textSize="14dp"
+                        android:textStyle="bold"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:text="Receive by"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/colorSmallTitle"
+                        android:textSize="12dp"
+                        android:textStyle="normal"></TextView>
+
+                    <TextView
+                        android:id="@+id/shipping_period"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:fontFamily="sans-serif"
+                        android:text="10 Jul - 15 Jul"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/colorSmallTitle"
+                        android:textSize="12dp"
+                        android:textStyle="normal"></TextView>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="13dp"
+                    android:background="@color/colorSmallTitle">
+
+                </View>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Payment"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/colorSmallTitle"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight="1"
+
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="right"
+
+                        android:text=">"
+
+                        android:textColor="@color/colorSmallTitle"
+                        android:textSize="12dp"></TextView>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/payment_method"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-thin"
+                        android:text="By Bank Transfer"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/colorSmallTitle"
+                        android:textSize="14dp"
+                        android:textStyle="bold"></TextView>
+
+                    <ImageView
+                        android:id="@+id/payment_done"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:src="@drawable/tick"
+
+
+                        >
+
+                    </ImageView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="0dp"
+
+                        android:fontFamily="sans-serif-thin"
+                        android:text="On Bills"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/colorSmallTitle"
+                        android:textSize="14dp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@+id/shipping_fee"
+                        android:layout_weight="28"
+                        android:fontFamily="sans-serif"
+                        android:gravity="right"
+                        android:text="$"
+                        android:textColor="@color/colorSmallTitle"
+                        android:textSize="13dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/on_bills"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-medium"
+
+
+                        android:gravity="right"
+                        android:text="1467"
+
+                        android:textColor="@color/colorSmallTitle"
+                        android:textSize="14dp"></TextView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="0dp"
+
+                        android:fontFamily="sans-serif-thin"
+                        android:text="Shipping"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/colorSmallTitle"
+                        android:textSize="14dp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@+id/shipping_fee"
+                        android:layout_weight="28"
+                        android:fontFamily="sans-serif"
+                        android:gravity="right"
+                        android:text="$"
+                        android:textColor="@color/colorSmallTitle"
+                        android:textSize="10dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/payment_shipping_fee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-medium"
+
+
+                        android:gravity="right"
+                        android:text="7.5"
+
+                        android:textColor="@color/colorSmallTitle"
+                        android:textSize="12dp"></TextView>
+
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="13dp"
+                    android:background="@color/colorSmallTitle">
+
+                </View>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Total"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/colorSmallTitle"
+                        android:textSize="18dp"></TextView>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="0dp"
+                            android:src="@drawable/tick"
+
+
+                            ></ImageView>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-thin"
+                        android:text="$"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/colorSmallTitle"
+                        android:textSize="20dp"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:fontFamily="sans-serif"
+                        android:text=""
+                        android:textAlignment="textStart"
+                        android:textSize="25dp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/total_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif"
+                        android:text="1474.5"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/colorSmallTitle"
+                        android:textSize="25dp"
+                        android:textStyle="bold"></TextView>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+</ScrollView>

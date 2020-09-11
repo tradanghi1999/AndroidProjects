@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">App Từ điển Cán bộ Đoàn</string>
+    <string name="def_title"><a>Lorem ipsum dolor sit amet,</a></string>
+    <string name="up_present_ver_mess">Bản hiện tại:</string>
+    <string name="up_server_ver_mess">Bản mới nhất:</string>
+    <string name="update">Cập nhật</string>
+    <string name="update_info">Thông tin cập nhật</string>
+    <string name="cancle">Huỷ</string>
+    <string name="soft_info">Thông tin phần mềm</string>
+    <string name="copyright">Bản quyền thuộc về UEL 2020</string>
+    <string-array name="options">
+        <item>Lorem ipsum teore</item>
+        <item>Lorem ipsum teore</item>
+        <item>Lorem ipsum teore</item>
+        <item>Lorem ipsum teore</item>
+    </string-array>
+
+    <string-array name="tags">
+        <item>Lorem</item>
+        <item>Lorem</item>
+        <item>Lorem</item>
+        <item>Lorem</item>
+        <item>Lorem</item>
+        <item>Lorem</item>
+    </string-array>
+
+    <string name="uniName">Trường Đại Học Kinh Tế - Luật</string>
+    <string name="divName">Đại học Quốc Gia TP.HCM</string>
+    <string name="appName">App Từ điển Cán bộ Đoàn</string>
+    <string name="placeholder">Nhập từ khoá</string>
+    <string name="searchResult">Kết quả hiển thị cho</string>
+    <string name="resultCount">(Tìm thấy 0 kết quả)</string>
+
+</resources>

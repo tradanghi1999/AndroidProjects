@@ -1,0 +1,50 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="LangSwitch">
+        <!-- active thumb & track color (30% transparency) -->
+        <item name="colorControlActivated">#D81B60</item>
+
+        <!-- inactive thumb color -->
+        <item name="colorSwitchThumbNormal">#347
+        </item>
+
+        <!-- inactive track color (30% transparency) -->
+        <item name="android:colorForeground">#347
+        </item>
+    </style>
+<!--    <declare-styleable name="TagItem">-->
+
+<!--        <item name="textSize">15dp</item>-->
+<!--        <item name="text">Lorem ispsum</item>-->
+<!--        <item name="textColor">#a48</item>-->
+<!--        <item name="paddingRight">20dp</item>-->
+
+<!--&lt;!&ndash;        <item name="text">Lorem ispsum</item>&ndash;&gt;-->
+
+
+
+<!--&lt;!&ndash;       &ndash;&gt;-->
+
+<!--&lt;!&ndash;        &ndash;&gt;-->
+
+<!--&lt;!&ndash;        <dimen name="paddingRight">20dp</dimen>&ndash;&gt;-->
+<!--&lt;!&ndash;        <dimen name="paddingLeft">20dp</dimen>&ndash;&gt;-->
+
+<!--&lt;!&ndash;        <dimen name="layout_width">150dp</dimen>&ndash;&gt;-->
+<!--&lt;!&ndash;        <dimen name="layout_height">20dp</dimen>&ndash;&gt;-->
+
+
+
+<!--    </declare-styleable>-->
+
+
+
+</resources>

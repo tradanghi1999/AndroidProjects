@@ -1,0 +1,38 @@
+{
+	"meta_data":
+	{
+		"version": "1.0"
+	},
+	"records":
+	[
+		{
+			"id":"n_000000001",
+			"name":"n_000000001",
+			"para": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+			"onlink":"",
+			"offlink":"",
+			"keywords":
+			[
+				"k_1","k_2","t_000001"
+			],
+			"group_id":"g_000001",
+			"search_times":	0,
+			"search_times_client":0
+		},
+		{
+			"id":"n_000000002",
+			"name":"n_000000002",
+			"para": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+			"onlink":"",
+			"offlink":"",
+			"keywords":
+			[
+				"k_1","k_2","k_3"
+			],
+			"group_id":"g_000001",
+			"search_times":	0,
+			"search_times_client":0
+		}
+
+	]
+}

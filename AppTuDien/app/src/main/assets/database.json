@@ -1,0 +1,27 @@
+{
+	"meta_data":
+	{
+		"version": "1.0"
+	},
+	"records":
+	[
+		{
+			"id":"w_000001",
+			"group_id":"g_0000001",
+			"vi_word":"t_000001",
+			"en_word":"w_000001",
+			"search_times":	0,
+			"search_times_client":0
+
+		},
+		{
+			"id":"w_000002",
+			"group_id":"g_0000001",
+			"vi_word":"t_000002",
+			"en_word":"w_000002",
+			"search_times":	0,
+			"search_times_client":0
+		}
+
+	]
+}

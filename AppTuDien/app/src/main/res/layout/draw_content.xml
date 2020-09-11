@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <data>
+        <variable
+            name="UpdatePrt"
+            type="vn.edu.uel.apptudien.presenter.HomepagePresenter" />
+
+    </data>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="@drawable/box_no_side_border"
+            android:paddingRight="30dp"
+            android:paddingLeft="20dp">
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_update"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:onClick="@{()->UpdatePrt.onUpdateClick()}">
+
+            </Button>
+            <TextView
+                android:id="@+id/new_up_sign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textSize="12dp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"
+                android:width="40dp"
+                android:height="40dp"
+                android:gravity="center"
+                android:layout_alignParentRight="true"
+                android:visibility="@{UpdatePrt.haveNewUpdate()}">
+
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/update_info"
+                android:layout_centerVertical="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18dp">
+
+            </TextView>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="@drawable/box_no_side_border"
+            android:paddingRight="30dp"
+            android:paddingLeft="20dp">
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_info"
+                android:onClick="@{()->UpdatePrt.onInfoClick()}">
+
+            </Button>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/soft_info"
+                android:layout_centerVertical="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18dp">
+
+            </TextView>
+        </RelativeLayout>
+    </LinearLayout>
+</layout>

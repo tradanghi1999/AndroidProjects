@@ -1,0 +1,10 @@
+{
+	"home_page":"http://ungdunguel.com/tudiencbdoan/index.php",
+	"home_dir":"http://ungdunguel.com/tudiencbdoan",
+	"home_metadata": "http://ungdunguel.com/tudiencbdoan/API/Metadata",
+	"home_word": "http://ungdunguel.com/tudiencbdoan/API/Word",
+	"home_group": "http://ungdunguel.com/tudiencbdoan/API/Group",
+	"home_news": "http://ungdunguel.com/tudiencbdoan/API/News",
+	"home_banner": "https://10.0.2.2/AppTuDien/API/Banner",
+	"home_landing": "http://ungdunguel.com/tudiencbdoan/API/Landing"
+}

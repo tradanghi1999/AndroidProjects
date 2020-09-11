@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Youth Union Dictionary App</string>
+    <string name="def_title"><a href="http://www.google.com">Lorem ipsum dolor sit amet,</a></string>
+    <string name="up_present_ver_mess">Local version is:</string>
+    <string name="up_server_ver_mess">Latest version is:</string>
+    <string name="update">Update</string>
+    <string name="update_info">Update Information</string>
+    <string name="soft_info">About</string>
+    <string name="cancle">Cancle</string>
+    <string name="copyright">copyright by UEL 2020</string>
+    <string-array name="options">
+        <item>Lorem ipsum teore</item>
+        <item>Lorem ipsum teore</item>
+        <item>Lorem ipsum teore</item>
+        <item>Lorem ipsum teore</item>
+    </string-array>
+
+    <string-array name="tags">
+        <item>Lorem</item>
+        <item>Lorem</item>
+        <item>Lorem</item>
+        <item>Lorem</item>
+        <item>Lorem</item>
+        <item>Lorem</item>
+    </string-array>
+
+    <string name="uniName">University of Economics and Laws</string>
+    <string name="divName">Ho Chi Minh city National University</string>
+    <string name="appName">Communist Youth Union Dictionary App</string>
+    <string name="placeholder">Keyword to find</string>
+    <string name="searchResult">Search result found</string>
+    <string name="resultCount">(0 found)</string>
+
+</resources>

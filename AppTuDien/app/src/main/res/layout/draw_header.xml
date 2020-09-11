@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="DrawerPresenter"
+            type="vn.edu.uel.apptudien.presenter.HomepagePresenter" />
+    </data>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        >
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_draw_close"
+            android:id="@+id/draw_close_btn"
+            android:layout_alignParentRight="true"
+            android:onClick="@{()->DrawerPresenter.closeDrawer()}"
+            ></Button>
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/circle_layout"
+            android:backgroundTint="#ccc"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/icon_draw">
+
+        </ImageView>
+    </RelativeLayout>
+</layout>

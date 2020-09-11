@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="LandingView"
+            type="com.ungdunguel.appcbdoan.viewmodel.LandingModel" />
+        <variable
+            name="LandingPrs"
+            type="com.ungdunguel.appcbdoan.presenter.LandingPresenter" />
+    </data>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            link="@{LandingView.link}"
+            name="@{LandingView.filename}"
+            asset_name="@{LandingView.assetname}"
+            loaded="@{LandingPrs.onImageLoaded()}">
+
+
+            <!--bind:link="@{LandingView.link}"-->
+
+
+
+        </ImageView>
+    </LinearLayout>
+</layout>

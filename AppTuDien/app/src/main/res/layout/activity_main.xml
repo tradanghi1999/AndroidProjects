@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<!--    <data class="KeysBinding">-->
+<!--        <variable-->
+<!--            name="Keysview"-->
+<!--            type="vn.edu.uel.apptudien.viewmodel.KeywordModel" />-->
+
+<!--        <variable-->
+<!--            name="PresenterMain"-->
+<!--            type="vn.edu.uel.apptudien.presenter.HomepagePresenter" />-->
+<!--    </data>-->
+
+
+    <androidx.drawerlayout.widget.DrawerLayout
+
+
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:actionBarNavMode="list"
+        android:id="@+id/main_drawer"
+
+        >
+
+
+
+
+
+
+
+        <include
+            layout="@layout/activity_home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/main_content">
+
+        </include>
+
+
+        <com.google.android.material.navigation.NavigationView
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+
+            android:id="@+id/nav_drawer"
+            android:fitsSystemWindows="false"
+            android:background="@android:color/white"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp">
+                <include
+                    layout="@layout/draw_content"
+                    android:id="@+id/update_zone"
+                    ></include>
+            </LinearLayout>
+
+        </com.google.android.material.navigation.NavigationView>
+
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</layout>

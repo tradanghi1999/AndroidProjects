@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="DrawerPresenter"
+            type="com.ungdunguel.appphapluat.presenter.HomepagePresenter" />
+    </data>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:background="@color/colorPrimary"
+        >
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_close_white"
+            android:id="@+id/draw_close_btn"
+            android:layout_alignParentRight="true"
+            android:onClick="@{()->DrawerPresenter.closeDrawer()}"
+            ></Button>
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:padding="5dp"
+            android:background="@color/colorPrimary"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/logo_uel"
+            android:id="@+id/ic_chibi">
+
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ham_text"
+            android:textAllCaps="true"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:layout_toRightOf="@id/ic_chibi"
+            android:layout_marginTop="11dp"
+
+            android:textStyle="bold"></TextView>
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TĐCBĐ</string>
+    <string name="up_present_ver_mess">Bản hiện tại:</string>
+    <string name="up_server_ver_mess">Bản mới nhất:</string>
+    <string name="update">Cập nhật</string>
+    <string name="update_info">Thông tin cập nhật</string>
+    <string name="soft_info">Thông tin phần mềm</string>
+    <string name="cancle">Huỷ</string>
+    <string name="copyright">\u00A9 Bản quyền thuộc về UEL 2020</string>
+    <string name="divName">Đại học Quốc Gia TP.HCM</string>
+    <string name="placeholder">Nhập từ khoá</string>
+    <string name="resultCount">(Tìm thấy 0 kết quả)</string>
+    <string name="searchResult">Kết quả hiển thị cho</string>
+    <string name="uniName">Trường Đại Học Kinh Tế - Luật</string>
+    <string name="app_head">App Từ điển Cán bộ Đoàn</string>
+    <string name="ham_text">Danh Mục App</string>
+    <string name="traffic">Lượt truy cập:</string>
+
+    <string name="intro">Lời Nói Đầu</string>
+    <string name="introPara">Đoàn TNCS Hồ Chí Minh và Hội Sinh viên Việt Nam từ lâu đã là những cái tên
+quen thuộc đối với mọi thanh niên, sinh viên trong cả nước. Kể từ khi thành lập đến nay,
+tổ chức Đoàn – Hội luôn khẳng định được vị thế, là đại diện cho lớp trẻ và có sức ảnh
+hưởng đến nhiều tổ chức trong nước và quốc tế. Đặc biệt, trong thời kì hội nhập hiện nay,
+khi tiếng Anh trở thành ngôn ngữ được sử dụng phổ biến tại nhiều quốc gia trên thế giới,
+thì việc thống nhất những thuật ngữ chung bằng Tiếng Anh trở nên cần thiết để có thể
+trao đổi thông tin với bạn bè quốc tế về công tác Đoàn – Hội.
+Từ thực tiễn đó, Đoàn Thanh niên – Hội Sinh viên Trường ĐH Kinh tế - Luật xây
+dựng từ điển Cán bộ Đoàn – Hội. Thông qua từ điển này, chúng tôi hi vọng rằng đây sẽ là
+công cụ hiệu quả giúp các bạn Đoàn viên, Sinh viên Trường nói riêng và Đoàn viên, Sinh
+viên Thành phố nói chung có thể áp dụng vào công tác Đoàn – Hội và cả trong đời sống.</string>
+    <string name="published">Chịu trách nhiệm xuất bản:</string>
+    <string name="youthUEL">Đoàn trường ĐH Kinh tế - Luật ĐHQG-HCM</string>
+    <string name="content">Chịu trách nhiệm nội dung:</string>
+    <string name="contentAuthor">ThS Ngô Lê Mạnh Hiếu - Bí thư \nvà Ban Tổ chức - Xây dựng Đoàn Trường</string>
+    <string name="develop">Phát triển phần mềm:</string>
+    <string name="developer">Trần Đại Nghĩa</string>
+    <string name="contact">Thông tin liên hệ:</string>
+    <string name="contactInfo">Đoàn trường ĐH Kinh tế - Luật ĐHQG-HCM\nEmail: doanthanhnien@uel.edu.vn\nSĐT: 083 7244555 (Ext 6391)</string>
+
+
+</resources>

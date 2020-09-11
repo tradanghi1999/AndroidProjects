@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content"
+    android:layout_width="fill_parent"
+
+    android:layout_height="fill_parent"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:fillViewport="true"
+
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:alpha=".9"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:id="@+id/statistic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lbl_statistic"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/title_daily_statistic"
+                    android:textSize="22sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <fragment
+                    android:id="@+id/item_daily_statistic"
+                    class="com.example.yyyyy.HomepageDailyStatisticFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_weight="1"
+                    tools:layout="@layout/statistic_mini" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/marketplace"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lbl_marketplace"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/title_marketplace"
+                    android:textSize="22sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <fragment
+                    android:id="@+id/item_marketplace"
+                    class="com.example.yyyyy.HomepageMarketplaceFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_weight="1"
+                    tools:layout="@layout/marketplace_mini" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sale_management"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lbl_sale_management"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/title_sale_management"
+                    android:textSize="22sp" />
+
+                <ImageView
+                    android:id="@+id/all_sale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="17dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:src="@mipmap/right_arrow" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <fragment
+                    android:id="@+id/sale_management1"
+                    class="com.example.yyyyy.OrderUnconfirmedItemFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_weight="1"
+                    tools:layout="@layout/new_order_mini" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <fragment
+                    android:id="@+id/sale_management2"
+                    class="com.example.yyyyy.OrderUnconfirmedItemFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_weight="1"
+                    tools:layout="@layout/new_order_mini"></fragment>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <fragment
+                    android:id="@+id/sale_management3"
+                    class="com.example.yyyyy.OrderUnconfirmedItemFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_weight="1"
+                    tools:layout="@layout/new_order_mini" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/keep_track_order"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lbl_keep_track"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/title_finished_order"
+                    android:textSize="22sp" />
+
+                <ImageView
+                    android:id="@+id/all_finish_order"
+                    android:layout_width="wrap_content"
+                    android:layout_height="14dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:src="@mipmap/right_arrow" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:baselineAligned="false"
+                android:orientation="vertical">
+
+                <fragment
+                    android:id="@+id/trackingDeliveryFragment1"
+                    class="com.example.yyyyy.OrderTrackingItemFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_weight="1"
+                    tools:layout="@layout/delivery_mini" />
+
+                <fragment
+                    android:id="@+id/trackingDeliveryFragment2"
+                    class="com.example.yyyyy.OrderTrackingItemFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_weight="1"
+                    tools:layout="@layout/delivery_mini" />
+
+                <fragment
+                    android:id="@+id/trackingDeliveryFragment3"
+                    class="com.example.yyyyy.OrderTrackingItemFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_weight="1"
+                    tools:layout="@layout/delivery_mini" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/canceled_order"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lbl_cancelled_order"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/title_cancelled_order"
+                    android:textSize="22sp" />
+
+                <ImageView
+                    android:id="@+id/all_canceled_order"
+                    android:layout_width="wrap_content"
+                    android:layout_height="14dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:src="@mipmap/right_arrow" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:baselineAligned="false"
+                android:orientation="vertical">
+
+                <fragment
+                    android:id="@+id/cancelOrderFragment1"
+                    class="com.example.yyyyy.OrderTrackingItemFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_weight="1"
+                    tools:layout="@layout/delivery_mini" />
+
+                <fragment
+                    android:id="@+id/cancelOrderFragment2"
+                    class="com.example.yyyyy.OrderTrackingItemFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_weight="1"
+                    tools:layout="@layout/delivery_mini" />
+
+                <fragment
+                    android:id="@+id/cancelOrderFragment3"
+                    class="com.example.yyyyy.OrderTrackingItemFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_weight="1"
+                    tools:layout="@layout/delivery_mini" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/on_delivery_order"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lbl_on_delivery_order"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/title_on_delivery_order"
+                    android:textSize="22sp" />
+
+                <ImageView
+                    android:id="@+id/all_on_delivery_order"
+                    android:layout_width="wrap_content"
+                    android:layout_height="14dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:src="@mipmap/right_arrow" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:baselineAligned="false"
+                android:orientation="vertical">
+
+                <fragment
+                    android:id="@+id/onDeliveryOrderFragment1"
+                    class="com.example.yyyyy.OrderTrackingItemFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_weight="1"
+                    tools:layout="@layout/delivery_mini" />
+
+                <fragment
+                    android:id="@+id/onDeliveryOrderFragment2"
+                    class="com.example.yyyyy.OrderTrackingItemFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_weight="1"
+                    tools:layout="@layout/delivery_mini" />
+
+                <fragment
+                    android:id="@+id/onDeliveryOrderFragment3"
+                    class="com.example.yyyyy.OrderTrackingItemFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_weight="1"
+                    tools:layout="@layout/delivery_mini" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cmt_management"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lbl_cmt_management"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="0dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center_vertical"
+                    android:text="@string/title_comment_management"
+                    android:textSize="22sp" />
+
+                <ImageView
+                    android:id="@+id/all_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="14dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:src="@mipmap/right_arrow" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <fragment
+                    android:id="@+id/cmt_management1"
+                    class="com.example.yyyyy.FeedbackCommentItemFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_weight="1"
+                    tools:layout="@layout/feedback_comment_item" />
+
+                <fragment
+                    android:id="@+id/cmt_management3"
+                    class="com.example.yyyyy.FeedbackCommentItemFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_weight="1"
+                    tools:layout="@layout/feedback_comment_item" />
+
+                <fragment
+                    android:id="@+id/cmt_management2"
+                    class="com.example.yyyyy.FeedbackCommentItemFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_weight="1"
+                    tools:layout="@layout/feedback_comment_item" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

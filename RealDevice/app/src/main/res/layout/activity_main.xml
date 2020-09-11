@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="BannerMdl"
+            type="vn.edu.uel.realdevice.viewmodel.BannerModel" />
+        <variable
+            name="BannerPrs"
+            type="vn.edu.uel.realdevice.presenter.BannerPresenter" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:id="@+id/value"
+            android:layout_width="match_parent"
+
+
+            app:layout_constraintWidth_default="wrap"
+            android:layout_height="30dp"
+            android:layout_marginStart="0dp"
+            android:lines="1"
+            app:layout_constraintBaseline_toBaselineOf="@+id/unit"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/unit"
+
+            android:background="#168"
+            />
+
+        <LinearLayout
+            android:id="@+id/unit"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+
+
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+
+            app:layout_constraintRight_toRightOf="parent"
+
+            tools:ignore="MissingConstraints"
+            android:background="#abc"/>
+
+        <!--        <TextView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:text="@string/app_name"-->
+        <!--            android:textSize="50dp"-->
+        <!--            android:visibility="gone">-->
+
+        <!--        </TextView>-->
+        <!--        <ImageView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:scaleType="centerCrop"-->
+        <!--            link="@{BannerMdl.link}"-->
+        <!--            name="@{BannerMdl.filename}"-->
+        <!--            loaded="@{BannerPrs.onImageLoaded()}"-->
+        <!--            ></ImageView>-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

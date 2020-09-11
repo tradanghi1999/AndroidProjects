@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">YYYYY</string>
+    <string name="title_header">header</string>
+
+    //menu
+    <string name="title_home">Home</string>
+    <string name="title_order">Order</string>
+    <string name="title_feedback">Feedback</string>
+    <string name="title_report">Report</string>
+    <string name="title_user">User</string>
+
+    //homepage
+    <string name="title_daily_statistic">Daily Statistic</string>
+    <string name="title_tracking_delivery">Tracking Delivery</string>
+    <string name="title_marketplace">Marketplace</string>
+    <string name="title_sale_management">Sale Management</string>
+    <string name="title_finished_order">Finished Order</string>
+    <string name="title_cancelled_order">Cancel Order</string>
+    <string name="title_on_delivery_order">On Delivery Order</string>
+
+    <string name="title_warehouse">Warehouse</string>
+    <string name="title_delivery">Delivery</string>
+    <string name="title_notification">Notification</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_warehouse_management">Warehouse Management</string>
+    <string name="title_comment_management">Comment Management</string>
+
+    <string name="dummy_text">Text</string>
+    <string name="HardcodedText">HardcodedText</string>
+    <string name="textview">TextView</string>
+    <string name="username">\@Hwqpblp</string>
+</resources>

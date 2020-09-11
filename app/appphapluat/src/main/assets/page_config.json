@@ -1,0 +1,10 @@
+{
+	"home_page":"http://tudienphapluat.ungdunguel.com/index.php",
+	"home_dir":"http://tudienphapluat.ungdunguel.com/",
+	"home_metadata": "http://tudienphapluat.ungdunguel.com/API/Metadata",
+	"home_word": "http://tudienphapluat.ungdunguel.com/API/Word",
+	"home_group": "http://tudienphapluat.ungdunguel.com/API/Group",
+	"home_news": "http://tudienphapluat.ungdunguel.com/API/News",
+	"home_banner": "http://tudienphapluat.ungdunguel.com/API/Banner/",
+	"home_landing": "http://tudienphapluat.ungdunguel.com/API/Landing"
+}

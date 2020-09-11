@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/header_container">
+
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp">
+
+            <RelativeLayout
+                android:id="@+id/logo_container"
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+
+
+                <ImageButton
+                    android:id="@+id/navigationBar"
+                    android:layout_width="83dp"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/burger" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center_vertical"
+                    android:textSize="30sp"
+                    tools:ignore="RelativeOverlap"
+                    tools:text="@string/title_delivery" />
+
+                <RelativeLayout
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentEnd="true"
+                    android:gravity="center_vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profile_image"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/ava_circle"
+                        android:src="@mipmap/ava" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+
+        android:layout_height="match_parent"
+        android:layout_below="@id/header_container"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="60dp"
+        android:fillViewport="true"
+
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha=".9"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <!--<fragment-->
+                <!--android:id="@+id/warehouse_management2"-->
+                <!--class="com.example.yyyyy.WarehouseManagementFragment"-->
+                <!--android:layout_width="120dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="5dp"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:layout_marginRight="5dp"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:layout_weight="1"-->
+                <!--tools:layout="@layout/delivery_detail"></fragment>-->
+
+            <!--<fragment-->
+                <!--android:id="@+id/warehouse_management1"-->
+                <!--class="com.example.yyyyy.WarehouseManagementFragment"-->
+                <!--android:layout_width="120dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="5dp"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:layout_marginRight="5dp"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:layout_weight="1"-->
+                <!--tools:layout="@layout/delivery_detail"></fragment>-->
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/navigation_menu">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</RelativeLayout>

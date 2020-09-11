@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#e27589</color>
+    <color name="colorPrimaryDark">#1c314d</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorText">#fff</color>
+    <color name="colorTag">#eee</color>
+    <color name="colorControlActivated">#D81B60</color>
+    <color name="colorSwitchThumbNormal">#0052C3</color>
+    <color name="colorPrimaryTrans">#80bfff</color>
+    <color name="colorAccentTrans">#f0f0f0
+    </color>
+    <color name="landingPage">#0093F8</color>
+    <color name="colorGreen">#32ad61</color>
+    <declare-styleable name="ParagraphBgColorTextView">
+        <attr name="paragraphBgColor" format="color" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minWidth="500dp"
+        android:minHeight="1000dp"
+        android:padding="10dp">
+        <Button
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/ic_draw_close"
+            android:layout_gravity="right"
+            android:id="@+id/info_close">
+
+        </Button>
+        <ScrollView
+            android:layout_margin="10dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_intro"
+                android:scaleType="fitStart"
+                >
+                <!--Add hinh image src vao day-->
+            </ImageView>
+
+        </ScrollView>
+
+    </LinearLayout>
+</layout>

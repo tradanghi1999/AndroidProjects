@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/feedbackContent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <fragment
+            android:id="@+id/feedback_all_new_item1"
+            class="com.example.yyyyy.FeedbackCommentItemFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_weight="1"
+            tools:layout="@layout/feedback_comment_item" />
+
+        <fragment
+            android:id="@+id/feedback_all_new_item2"
+            class="com.example.yyyyy.FeedbackCommentItemFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_weight="1"
+            tools:layout="@layout/feedback_comment_item" />
+
+        <fragment
+            android:id="@+id/feedback_all_new_item3"
+            class="com.example.yyyyy.FeedbackCommentItemFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_weight="1"
+            tools:layout="@layout/feedback_comment_item" />
+
+        <fragment
+            android:id="@+id/feedback_all_new_item4"
+            class="com.example.yyyyy.FeedbackCommentItemFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_weight="1"
+            tools:layout="@layout/feedback_comment_item" />
+
+        <fragment
+            android:id="@+id/feedback_all_new_item5"
+            class="com.example.yyyyy.FeedbackCommentItemFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_weight="1"
+            tools:layout="@layout/feedback_comment_item" />
+
+
+        <fragment
+            android:id="@+id/feedback_all_new_item6"
+            class="com.example.yyyyy.FeedbackCommentItemFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_weight="1"
+            tools:layout="@layout/feedback_comment_item" />
+    </LinearLayout>
+
+</ScrollView>

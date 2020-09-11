@@ -1,0 +1,10 @@
+{
+	"home_page":"https://10.0.2.2/AppTuDien/index.php",
+	"home_dir":"https://10.0.2.2/AppTuDien/",
+	"home_metadata": "https://10.0.2.2/AppTuDien/API/Metadata",
+	"home_word": "https://10.0.2.2/AppTuDien/API/Word",
+	"home_group": "https://10.0.2.2/AppTuDien/API/Group",
+	"home_news": "https://10.0.2.2/AppTuDien/API/News",
+	"home_banner": "https://10.0.2.2/AppTuDien/API/Banner/",
+	"home_landing": "https://10.0.2.2/AppTuDien/API/Landing"
+}

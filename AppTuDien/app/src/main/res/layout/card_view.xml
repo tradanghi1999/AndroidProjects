@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data class="NewsModelBinding">
+        <variable
+            name="NewsView"
+            type="vn.edu.uel.apptudien.viewmodel.NewsModel" />
+<!--        <variable-->
+<!--            name="NewsPresenter"-->
+<!--            type="vn.edu.uel.AppTuDienDoan.presenter.LinkPresenter" />-->
+    </data>
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+
+        android:background="@drawable/corner_box_layout"
+
+
+        >
+
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+
+            android:autoLink="all"
+            android:linksClickable="true"
+
+            android:textColor="@color/colorPrimary"
+
+            android:textSize="20dp"
+            android:text="@{NewsView.name}">
+
+            android:onClick="@{(v)->NewsPresenter.onClickOnLink()}"
+            >
+
+        </TextView>
+
+        <vn.edu.uel.apptudien.ui.ParagraphBgTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="4dp"
+            android:textSize="16dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+
+            android:justificationMode="inter_word"
+            android:text="@{NewsView.para}"/>
+<!--           />-->
+
+
+
+
+
+
+    </LinearLayout>
+</layout>

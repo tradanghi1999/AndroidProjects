@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">UELdict</string>
+    <string name="def_title" translatable="false"><a>Lorem ipsum dolor sit amet,</a></string>
+    <string name="up_present_ver_mess">Local version is:</string>
+    <string name="up_server_ver_mess">Latest version is:</string>
+    <string name="update">Update</string>
+    <string name="update_info">Update Info</string>
+    <string name="soft_info">About</string>
+    <string name="cancle">Cancle</string>
+    <string name="copyright">\u00A9 copyright by UEL 2020</string>
+    <string name="uniName">University of Economics and Laws</string>
+    <string name="divName">Ho Chi Minh city National University</string>
+    <string name="placeholder">Keyword to find</string>
+    <string name="searchResult">Search result found</string>
+    <string name="resultCount">(0 found)</string>
+    <string name="app_head">Youth Union Dictionary App</string>
+    <string name="ham_text">Category</string>
+    <string name="traffic">Traffic:</string>
+    <string name="intro">Introduction</string>
+    <string name="introPara">Along with the process of international economic integration, the need to learn and advise on legal issues in English for organizations and individuals in society is becoming more and more popular. In order to help law students develop their professional knowledge, improve their English skills, step by step build up their capacity to research legal issues related to international economic integration, The Youth Union of University of Economics and Laws VNU-HCM synthesizes legal terms in Vietnamese and English to produce "Dictionary of Vietnamese - English legal terminology".</string>
+    <string name="published">Publising by:</string>
+    <string name="youthUEL">The Youth Union of University of Economics and Laws</string>
+    <string name="content">Content by:</string>
+    <string name="contentAuthor">Master Nguyen The Đuc Tam</string>
+    <string name="develop">Software Developer:</string>
+    <string name="developer">Tran Dai Nghia</string>
+    <string name="contact">Contact:</string>
+    <string name="contactInfo">The Youth Union of University of Economics and Laws\nEmail: doanthanhnien@uel.edu.vn\nPhone: 083 7244555 (Ext 6391)</string>
+
+</resources>

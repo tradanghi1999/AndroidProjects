@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TĐPL</string>
+    <string name="up_present_ver_mess">Bản hiện tại:</string>
+    <string name="up_server_ver_mess">Bản mới nhất:</string>
+    <string name="update">Cập nhật</string>
+    <string name="update_info">Thông tin cập nhật</string>
+    <string name="soft_info">Thông tin phần mềm</string>
+    <string name="cancle">Huỷ</string>
+    <string name="copyright">\u00A9 Bản quyền thuộc về UEL 2020</string>
+    <string name="divName">Đại học Quốc Gia TP.HCM</string>
+    <string name="placeholder">Nhập từ khoá</string>
+    <string name="resultCount">(Tìm thấy 0 kết quả)</string>
+    <string name="searchResult">Kết quả hiển thị cho</string>
+    <string name="uniName">Trường Đại Học Kinh Tế - Luật</string>
+    <string name="app_head">App Từ điển Cán bộ Đoàn</string>
+    <string name="ham_text">Danh Mục App</string>
+    <string name="traffic">Lượt truy cập:</string>
+    <string name="intro">Lời Nói Đầu</string>
+
+    <string name="introPara">Cùng với quá trình hội nhập kinh tế quốc tế, nhu cầu tìm hiểu và tư vấn các vấn đề pháp lý bằng tiếng Anh cho các tổ chức, cá nhân trong xã hội ngày càng trở nên phổ biến. Nhằm giúp các bạn sinh viên ngành luật phát triển kiến thức chuyên môn, nâng cao kỹ năng sử dụng tiếng Anh, từng bước xây dựng năng lực nghiên cứu các vấn đề pháp lý liên quan đến hội nhập kinh tế quốc tế, Đoàn trường Đại học Kinh tế - Luật ĐHQG-HCM tiến hành tổng hợp các thuật ngữ pháp luật bằng tiếng Việt và tiếng Anh để cho ra đời “Từ điển thuật ngữ pháp luật Việt – Anh”.</string>
+    <string name="published">Chịu trách nhiệm xuất bản:</string>
+    <string name="youthUEL">Đoàn trường ĐH Kinh tế - Luật ĐHQG-HCM</string>
+    <string name="contentAuthor">ThS Nguyễn Thế Đức Tâm\nPhó Bí thư
+và Ban Học tập - NCKH Đoàn Trường</string>
+    <string name="content">Chịu trách nhiệm nội dung:</string>
+    <string name="develop">Phát triển phần mềm:</string>
+    <string name="developer">Trần Đại Nghĩa</string>
+    <string name="contact">Thông tin liên hệ:</string>
+    <string name="contactInfo">Đoàn trường ĐH Kinh tế - Luật ĐHQG-HCM\nEmail: doanthanhnien@uel.edu.vn\nSĐT: 083 7244555 (Ext 6391)</string>
+
+</resources>
